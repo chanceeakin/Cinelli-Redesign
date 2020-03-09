@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialized Redesign</title>
+    <script src="https://kit.fontawesome.com/6eb1dc7931.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans:200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="css/mainLanding.css">
+   
+</head>
+<body>
+  <!-- TOP NAV -->
+  <nav id="topNavbar" class="navbar d-flex navbar-expand-lg">
+    <a href="#" id="handmadeId">Handmade in Italy since 1948.</a>
+    <div class="collapse navbar-collapse">
+      <ul class="ml-auto nav navbar-nav navbar-right" id="cDivTop" >
+        <span id="colorYellow"></span>  
+          <li class="store-locator nav-item" id="findRetailer">
+              <span class="icon icon-location"></span>
+              <a href="#"><i class="fas fa-map-marker-alt fa-md"></i> Find a Retailer</a>
+            </li>
+            <li class="sign-in nav-item">
+                <a href="#"> Sign in</a>
+            </li>
+          </ul>
+        <div>
+      </nav>
+
+     
+   
+        <!-- MAIN NAV -->
+
+  <!-- BRAND IMAGE AND TOGGLER   -->
+<nav id="mainNavbar" class="navbar navbar-expand-lg">
+  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a href="/" class="navbar-brand">
+      <img id="brandIcon" src="/public/img/CinLogo.jpg" alt="">
+    </a>
+   
+           <!-- LINKS -->
+  <div class="collapse navbar-collapse d-flex justify-content-center" id="navbar">
+    <ul class="navbar-nav">
+     <li class="nav-item" id="bikesButton">
+        <a href=""  class="nav-link">Bikes</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">Components</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">Apparel</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">Sale</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">Inside Cinelli</a>
+      </li>
+    </ul>
+  </div>
+  <div class="icons-right d-flex">
+    <!-- Icons Right -->
+    <ul class="ml-auto nav navbar-nav navbar-right">
+      <li class="nav-item">
+          <form action="/shop/bikes" method="GET" class="form-inline">
+            <input class="form-control mr-sm-2" aria-label="Search" type="search" name="search" placeholder="Search" >
+            <button type="submit" value="Search" class="btn btn-default">Search</button>
+          </form>
+      </li>
+      <li class="nav-item">
+        <a href=""><i class="far fa-heart fa-md"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href=""><i class="fas fa-shopping-cart fa-md"></i></a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+
+<section class="container-fluid " id="dropdownMenu">
+  <div class="row">
+    <div class="col-lg-3" id="leftDiv">
+      <p>Innovation</p>
+      <p>Bike Archive</p>
+      <p>Sale</p>
+    </div>
+      <div class="col-lg-6" id="centerDiv">
+        <div>
+          <ul>
+            <h3>Road Bikes</h3>
+            <li>Veltrix</li>
+            <li>Superstar</li>
+            <li>Vigorelli</li>
+            <li>Semper</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <h3>Gravel Bikes</h3>
+            <li>Zydeco</li>
+            <li>Hobootleg</li>
+            <li>Gazzetta</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <h3>Track/Urban Bikes</h3>
+            <li>Tipo Pista</li>
+            <li>Tutto</li>
+            <li>Cinelli Tipo Pista</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <h3>Frames</h3>
+            <li>Veltrix</li>
+            <li>Superstar</li>
+            <li>Vigorelli</li>
+          </ul>
+        </div>
+       
+      </div>
+    <div class="col-lg-3" id="rightDiv">
+      <p>Stories</p>
+      <p>About</p>
+    </div>
+  </div>
+</section>

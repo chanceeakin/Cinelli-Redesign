@@ -1,0 +1,161 @@
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+
+}
+/* TOP NAVBAR */
+#topNavbar {
+    height: 32px;
+    padding-left: 50px;
+    padding-right: 0;
+    background-color: black;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#cDivTop i {
+    margin-right: 11px;;
+}
+
+
+
+#cDivTop li {
+    height: 32px;
+    width: 150px;  
+    text-align: center;
+    padding-top: 2px;
+ }
+
+#cDivTop a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    letter-spacing: .5px;
+    height: 32px;  
+    text-transform: uppercase;
+}
+
+#handmadeId {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+#divPadding {
+   height: 32px;
+}
+
+#findRetailer {
+    padding-right: 10px;
+    /* background-color: #5BAE4B; */
+    /* border-right: 2px solid black; */
+    /* border-left: px solid black;
+    border-right: 4px solid black; */
+    margin-right: 2.5px;
+  
+ }
+
+
+.sign-in {
+    background-color: #CF4747;
+   
+}
+
+
+/* MAIN NAVBAR */
+#brandIcon {
+    width: 150px;
+   
+}
+
+.navbar-brand {
+    
+}
+
+#mainNavbar {
+    background-color: white;
+    padding-left: 23px;
+    padding-right: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#mainNavbar a {
+    color: black;
+}
+
+#navbar .nav-item {
+    font-size: 11.5px;
+    letter-spacing: 1px;
+    padding: 1.3em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.icons-right li{
+    padding: 1.1em;
+}
+
+/* DROPDOWN MENU */
+
+
+
+#dropdownMenu {
+    background-color: white;
+    position: absolute;
+    height: 170px;
+    box-shadow: 5px 1px 20px #E3E3E3;
+    opacity: 0;
+    
+}
+
+#centerDiv div {
+   display: inline-block;
+   padding-right: 15px;
+   vertical-align: top;
+}
+
+#dropdownMenu h3 {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+#dropdownMenu li {
+    font-size: 11.4px;
+    list-style-type: none;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+#centerDiv {
+    border-right: 1px solid #E1E1E1;
+    border-left: 1px solid #E1E1E1;
+    height: 170px;
+    text-align: left;
+    padding: 25px;
+   
+}
+
+#leftDiv {
+    text-align: right;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 23px;
+    padding-right: 30px;
+}
+
+#rightDiv {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 23px;
+    padding-left: 30px;
+}
+
+
+
+
