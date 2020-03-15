@@ -1,0 +1,41 @@
+<%- include("./partials/header") %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8" id="signUpInfo">
+            <h2>Create an Account</h2>
+            <!-- <form action="/register" method="post">
+                <input type="text" name="username" placeholder="username">
+                <input type="password" name="password" placeholder="password">
+                <button>Sign Up</button>
+            </form> -->
+           
+           
+            <form action="/register" method="post" id="signUpForm">
+                <label for="username">Email</label>
+                <input type="text" name="username">
+                <label for="password">Password</label>
+                <input type="password" required="required" id="password" name="password">
+                <label for="password_confirm">Confirm Password</label>
+                <input type="password" name="password_confirm"  required="required">
+                <script language='javascript' type='text/javascript'>
+                    function check(input) {
+                        if (input.value != document.getElementById('password').value) {
+                            input.setCustomValidity('Password Must be Matching.');
+                        } else {
+                            // input is valid -- reset the error message
+                            input.setCustomValidity('');
+                        }
+                    }
+                </script>
+                <button>Submit</button>
+            </form>
+             
+        </div>
+    </div>
+</div>
+
+<%- include("./partials/footer") %>
+
+
+<!-- oninput="check(this)" -->

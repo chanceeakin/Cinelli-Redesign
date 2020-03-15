@@ -1,0 +1,31 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <p class="lead">BIKE</p>
+            <div class="list-group">
+               
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="thumbnail">
+                <img class="img-responsive" src="<%= bike.image %>">
+                <div class="caption-full">
+                    <h4 class="pull-right">$<%= bike.price.toLocaleString(); %>.00</h4>
+                    <h4><a> <%= bike.name %> </a></h4>
+                    <p> <%= bike.description %> </p>
+                   <% if(currentUser && bike.author.id.equals(currentUser._id)) { %>                   
+                        <a class="btn btn-xs btn-warning" href="/shop/bikes/<%= bike.id %>/edit">Edit</a>
+                        <form id="delete-form" action="/shop/bikes/<%= bike._id %>?_method=DELETE" method="POST">
+                            <button class="btn btn-xs btn-danger">Delete</button>
+                        </form>
+                    <% } %>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<%- include("../partials/footer") %>

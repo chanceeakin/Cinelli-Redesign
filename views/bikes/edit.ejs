@@ -1,0 +1,48 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+    <div class="row">
+        <h1 id="editBikeIdH1">Edit <%= bike.name %></h1>
+        <div id="editFormDiv">
+            <form action="/shop/bikes/<%= bike._id %>?_method=PUT" method="POST">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="bike[name]" placeholder="name" value="<%= bike.name %>">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="bike[image]" placeholder="image URL" value="<%= bike.image %>">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="bike[description]" placeholder="description" value="<%= bike.description%>">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" name="bike[price]" placeholder="price" value="<%= bike.price %>">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="bike[frameMaterial]" placeholder="frame material" value="<%= bike.frameMaterial %>">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="bike[brakeType]" placeholder="brake type" value="<%= bike.brakeType %>">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="bike[bikeType]" placeholder="bike type" value="<%= bike.bikeType %>">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="bike[color]" placeholder="color" value="<%= bike.color %>">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="bike[size]" placeholder="size" value="<%= bike.size %>">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="bike[headset]" placeholder="headset" value="<%= bike.headset %>">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primay btn-block">Submit</button>
+                </div>
+            </form>
+            <a href="/shop/bikes">Go Back</a>
+        </div>
+    </div>
+</div>
+
+
+<%- include("../partials/footer") %>

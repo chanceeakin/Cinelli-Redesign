@@ -1,0 +1,113 @@
+
+/* HEADER */
+
+.mainBikesImage {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+
+.text-box-bikes {
+    position: absolute;
+    text-align: right;
+    margin-top: 400px;
+    margin-left: -300px;
+    height: 100%;
+    width: 100%;
+}
+
+.mainBikesImage h1 {
+    display: inline-block;
+    color: white;
+}
+
+.mainBikesImage img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+/* ALL BIKES - INDEX*/
+#allBikes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+#bike {
+    background-color: white;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+.bikeInfo h4 {
+    font-size: 14px;
+    display: inline-block;
+}
+
+#bikeName {
+    text-align: left;
+}
+
+#bikePrice {
+   float: right;
+}
+
+#dropdownMenuButton {
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+#addNewBike {
+    margin-top: 40px;
+}
+
+/* NEW BIKE */
+#createBikeIdH1 {
+    text-align: center;
+}
+
+#createFormDiv {
+    width: 30%;
+    margin: 25px auto;
+}
+
+/* EDIT BIKE */
+#editBikeIdH1 {
+    text-align: center;
+}
+
+#editFormDiv {
+    width: 30%;
+    margin: 25px auto;
+}
+
+/* EDIT COMMENT */
+#editCommentIdH1 {
+    text-align: center;
+}
+
+#editCommentIdDiv {
+    width: 30%; margin: 25px auto;
+}
+
+/* NEW COMMENT */
+#newCommentIdH1 {
+    text-align: center;
+}
+
+#newCommentIdDiv {
+    width: 30%; margin: 25px auto;
+}
+
+

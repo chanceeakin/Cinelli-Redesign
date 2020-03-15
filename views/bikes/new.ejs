@@ -1,0 +1,59 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+    <div class="row">
+        <h1 id="createBikeIdH1">Create a new Bike</h1>
+        <div id="createFormDiv">
+            <form action="/shop/bikes" method="POST">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name" placeholder="name">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="image" placeholder="image URL">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="description" placeholder="description">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" name="price" placeholder="price">
+                </div>
+                <!-- <div class="form-group">
+                    <label for="frameMaterial">Select Frame Material</label>
+                    <select name="frameMaterial" id="frameMaterial">
+                        <option value="carbon">Carbon Fiber</option>
+                        <option value="aluminum">Aluminum</option>
+                        <option value="steel">Steel</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="brakeType">Select Brake Type</label>
+                    <select name="brakeType" id="brakeType">
+                        <option value="caliper">Caliper</option>
+                        <option value="disk">Disk</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="bikeType">Select Bike Type</label>
+                    <select id="bikeType" name="bikeType">
+                        <option value="roadBike">Road Bike</option>
+                        <option value="gravelBike">Gravel Bike</option>
+                        <option value="trackBike">Track Bike</option>
+                        <option value="urbanBike">Urban Bike</option>
+                    </select>
+                </div> -->
+                <!-- <div class="form-group">
+                    <input type="text" class="form-control" name="brakeType" placeholder="brake type">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="brakeType" placeholder="brake type">
+                </div> -->
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primay btn-block">Submit</button>
+                </div>
+            </form>
+            <a href="/shop/bikes">Go Back</a>
+        </div>
+    </div>
+</div>
+
+<%- include("../partials/footer") %>

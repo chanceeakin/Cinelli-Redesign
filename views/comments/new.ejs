@@ -1,0 +1,19 @@
+
+
+<div class="container">
+    <div class="row">
+        <h1 id="newCommentIdH1">Edit Comment</h1>
+        <div id="newCommentIdDiv">
+            <form action="/shop/bikes/<%= bike_id %>/comments method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="text" name="comment[text]">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+                </div>
+            </form>
+            <a href="/shop/bikes">Go Back</a>
+        </div>
+    </div>
+</div>
+
