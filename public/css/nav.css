@@ -1,91 +1,53 @@
 body {
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: black;
 
 }
-/* TOP NAVBAR */
-#topNavbar {
-    height: 32px;
-    padding-left: 50px;
-    padding-right: 0;
-    background-color: black;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-#cDivTop i {
-    margin-right: 11px;;
-}
-
-
-
-#cDivTop li {
-    height: 32px;
-    width: 150px;  
-    text-align: center;
-    padding-top: 2px;
- }
-
-#cDivTop a {
-    text-decoration: none;
-    color: white;
-    font-size: 10px;
-    letter-spacing: .5px;
-    height: 32px;  
-    text-transform: uppercase;
-}
-
-#handmadeId {
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
-    font-weight: 200;
-}
-
-#divPadding {
-   height: 32px;
-}
-
-#findRetailer {
-    padding-right: 10px;
-    /* background-color: #5BAE4B; */
-    /* border-right: 2px solid black; */
-    /* border-left: px solid black;
-    border-right: 4px solid black; */
-    margin-right: 2.5px;
-  
- }
 
 
 .sign-in {
     background-color: #CF4747;
-   
-}
+ 
+} 
 
 
 /* MAIN NAVBAR */
-#brandIcon {
-    width: 150px;
-   
-}
 
-.navbar-brand {
-    
+#brandIcon {
+   width: 190px;
+   margin: px;
+   margin-top: -10px;
 }
 
 #mainNavbar {
     background-color: white;
-    padding-left: 23px;
-    padding-right: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
     padding-top: 0;
     padding-bottom: 0;
-}
-
-#mainNavbar a {
+    text-transform: uppercase;
+    height: 76px;
     color: black;
 }
 
-#navbar .nav-item {
+#mainNavbar li {
+    height: 76px;
+}
+
+
+#mainNavbar a {
+    color: black;
+    align-items: center;
+    padding-top: 15px;
+}
+
+#mainNavbar .nav-link {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbarLinks .nav-item {
     font-size: 11.5px;
     letter-spacing: 1px;
     padding: 1.3em;
@@ -95,7 +57,64 @@ body {
 
 .icons-right li{
     padding: 1.1em;
+    margin: 0;
 }
+
+#bikes {
+    border-bottom: 3px solid #F54343;
+}
+
+#componenets {
+    border-bottom: 3px solid #00CA0F;
+}
+
+#apparel {
+    border-bottom: 3px solid #EBF54A;
+}
+
+#insideCinelli  {
+    border-bottom: 3px solid black;
+}
+
+/* #bikesButton {
+    margin-right: 50px;
+    margin-left: 200px;
+}
+
+#insideCinelli {
+    margin-left: 50px;
+    margin-right: 25px;
+} */
+
+.icons-right {
+    display: inline-block;
+   padding-top: 15px;
+}
+
+@media (max-width: 1250px) {
+    #insideCinelli {
+        margin-left: 0px;
+        margin-right: -25px;
+    }
+}
+
+@media (max-width: 1250px) {
+    #bikesButton {
+        margin-left: 50px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .icons-right {
+        margin-left: -50px;
+        margin-right: 0px;
+        padding-left: -100px;
+        
+    }
+}
+
+
 
 /* DROPDOWN MENU */
 

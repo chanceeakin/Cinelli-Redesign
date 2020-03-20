@@ -4,7 +4,7 @@
 //      // BIKES HOVER
 $( "#bikesButton").hover(
     function() {
-        $("#dropdownMenu").css( "opacity", "1" ).hover(
+        $("#dropdownMenu").css( {"opacity": "1"} ).hover(
             function (){
                 $("#dropdownMenu").css( "opacity", "1" )
             }, function() {

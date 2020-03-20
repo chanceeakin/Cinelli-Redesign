@@ -1,5 +1,57 @@
 body {
-    background-color: lightblue;
 
+}
+
+#headerImage {
+    position: relative;
+}
+
+#headerImage img {
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+}
+
+#headerText {
+    margin-top: 300px;
+    color: white;
+    text-transform: uppercase;
     
+}
+
+#headerText h1 {
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 300;
+    width: 400px;
+    margin-bottom: 20px;
+    
+}
+
+.buttonMain {
+    
+    font-size: 0;
+}
+
+#shopNow {
+    background-color: #AE7825;
+    font-size: 14px;
+    border: none;
+    padding: 20px;
+    text-transform: uppercase;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#learnMore {
+    background-color: #7486CB;
+    font-size: 14px;
+    border: none;
+    padding: 20px;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 10px 5px 5px black;
+    padding-left: 40px;
+    padding-right: 40px;
 }
