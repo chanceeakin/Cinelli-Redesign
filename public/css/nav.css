@@ -6,6 +6,8 @@ body {
 }
 
 
+
+
 .sign-in {
     background-color: #CF4747;
  
@@ -20,6 +22,13 @@ body {
    margin-top: -10px;
 }
 
+.navbar-center {
+    padding-top: 5px;
+    padding-bottom: 0;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
 #mainNavbar {
     background-color: white;
     padding-left: 75px;
@@ -27,20 +36,20 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     text-transform: uppercase;
-    height: 76px;
+    
     color: black;
     
 }
 
 #mainNavbar li {
-    height: 76px;
+    
 }
 
 
 #mainNavbar a {
     color: black;
     align-items: center;
-    padding-top: 15px;
+  
 }
 
 .mainLink {
@@ -51,15 +60,19 @@ body {
 .navbarLinks .nav-item {
     font-size: 11.5px;
     letter-spacing: 1px;
-    padding: 1.3em;
+    padding-top: 23px;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
     text-decoration: none;
     text-transform: uppercase;
+    height: 80px;
 }
 
 .icons-right li {
-    padding: 1.1em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
     margin: 0;
-    margin-top: -10px;
+    margin-top: 0px;
     display: inline-block;
 }
 
@@ -98,23 +111,19 @@ body {
 }
 
 @media (max-width: 1150px) {
+    .icons-right li {
+        padding: .3em;
+    }
     .mainLink {
         margin-left: 0px;
         margin-right: 0px;
     }
 }
 
-@media (max-width: 1150px) {
-    .icons-right li {
-        padding: .3em;
-        margin-top: 15px;
-    }
-}
-
 @media (max-width: 991px) {
     .icons-right li {
        margin: 10px;
-       margin-top: 20px;
+       margin-top: 10px;
     }
     #brandIcon {
         margin-left: 40px;
@@ -123,13 +132,14 @@ body {
         padding-left: 40px;
         padding-right: 40px;
     }
+
    
 }
 
 @media (max-width: 600px) {
     .icons-right li {
         margin: 0px;
-        margin-top: 10px;
+        margin-top: 0px;
      }
      #brandIcon {
          margin-left: 25px;
@@ -150,7 +160,7 @@ body {
     height: 170px;
     box-shadow: 5px 1px 20px #E3E3E3;
     opacity: 0;
-    z-index: -1;
+    z-index:;
     
 }
 

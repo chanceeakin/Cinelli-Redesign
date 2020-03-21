@@ -33,8 +33,7 @@ body {
     font-size: 0;
 }
 
-#shopNow {
-    background-color: #AE7825;
+.mainButton {
     font-size: 14px;
     border: none;
     padding: 15px;
@@ -44,13 +43,72 @@ body {
     padding-right: 30px;
 }
 
+#shopNow {
+    background-color: #AE7825;
+
+}
+
 #learnMore {
     background-color: #6A81D8;
-    font-size: 14px;
-    border: none;
-    padding: 15px;
-    text-transform: uppercase;
-    color: white;
-    padding-left: 30px;
-    padding-right: 30px;
+    
+}
+
+@media (max-width: 1300px){
+    #headerText {
+        margin-top: 225px;
+        margin-right: 75px;
+    }
+}
+
+@media (max-width: 1100px) {
+    #headerText {
+        margin-top: 200px;
+        margin-right: 50px;
+    }
+    #headerText h1 {
+        font-size: 32px;
+    }
+    .mainButton {
+        font-size: 12px;
+        border: none;
+        padding: 12px;
+        text-transform: uppercase;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .buttonMain {
+        width: 300px;
+    }
+}
+
+@media (max-width: 991px) {
+    #headerImage img {
+        width: 991px;
+    }
+    #headerText {
+        margin-top: 175px;
+        margin-left: 400px;
+    }
+    .mainButton {
+        font-size: 12px;
+        border: none;
+        padding: 12px;
+        text-transform: uppercase;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .buttonMain {
+        width: 300px;
+    }
+}
+
+@media (max-width: 800px) {
+    #headerText {
+      display: none;
+    }
+    .mainButton {
+      display: none;
+    }
 }
