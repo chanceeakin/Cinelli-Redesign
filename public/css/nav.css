@@ -29,6 +29,7 @@ body {
     text-transform: uppercase;
     height: 76px;
     color: black;
+    
 }
 
 #mainNavbar li {
@@ -42,7 +43,7 @@ body {
     padding-top: 15px;
 }
 
-#mainNavbar .nav-link {
+.mainLink {
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -55,9 +56,11 @@ body {
     text-transform: uppercase;
 }
 
-.icons-right li{
+.icons-right li {
     padding: 1.1em;
     margin: 0;
+    margin-top: -10px;
+    display: inline-block;
 }
 
 #bikes {
@@ -76,45 +79,66 @@ body {
     border-bottom: 3px solid black;
 }
 
-/* #bikesButton {
-    margin-right: 50px;
-    margin-left: 200px;
-}
-
-#insideCinelli {
-    margin-left: 50px;
-    margin-right: 25px;
-} */
-
 .icons-right {
     display: inline-block;
-   padding-top: 15px;
+   
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+    color: black;
 }
 
 @media (max-width: 1250px) {
-    #insideCinelli {
+    .mainLink {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .mainLink {
         margin-left: 0px;
-        margin-right: -25px;
-    }
-}
-
-@media (max-width: 1250px) {
-    #bikesButton {
-        margin-left: 50px;
         margin-right: 0px;
     }
 }
 
-@media (max-width: 1000px) {
-    .icons-right {
-        margin-left: -50px;
-        margin-right: 0px;
-        padding-left: -100px;
-        
+@media (max-width: 1150px) {
+    .icons-right li {
+        padding: .3em;
+        margin-top: 15px;
     }
 }
 
+@media (max-width: 991px) {
+    .icons-right li {
+       margin: 10px;
+       margin-top: 20px;
+    }
+    #brandIcon {
+        margin-left: 40px;
+        align-items: center;
+    } #mainNavbar {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+   
+}
 
+@media (max-width: 600px) {
+    .icons-right li {
+        margin: 0px;
+        margin-top: 10px;
+     }
+     #brandIcon {
+         margin-left: 25px;
+     }
+      #mainNavbar {
+         padding-left: 15px;
+         padding-right: 15px;
+     }
+}
 
 /* DROPDOWN MENU */
 
@@ -126,6 +150,7 @@ body {
     height: 170px;
     box-shadow: 5px 1px 20px #E3E3E3;
     opacity: 0;
+    z-index: -1;
     
 }
 
