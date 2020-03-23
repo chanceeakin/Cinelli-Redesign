@@ -21,6 +21,40 @@
     
  );
 
+//  ADD ICON DISPLAY CLASS
+
+function jqUpdateSize(){
+    // Get the dimensions of the viewport
+    var width = $(window).width();
+
+    if(width > 991){
+        $( ".collapseIcon" ).css( "display", "none" );
+        $( ".collapseIcon" ).css( "display", "none" );
+    } else {
+        $( ".collapseIcon" ).css( "display", "inline-block" );
+    }
+};
+
+// CHANGE HREF FOR NAV LINKS WHEN TOGGLED
+function removeLinkBikes(){
+    var width = $(window).width();
+    if(width > 991){
+        $( "#bikes" ).attr( "href", "#");
+        
+       
+    } else {
+        $( "#bikes" ).attr( "href", "#bikesCollapse" );
+      
+        
+    }
+}
+$(document).ready(jqUpdateSize);    // When the page first loads
+$(window).resize(jqUpdateSize);     // When the browser changes size
+
+$(document).ready(removeLinkBikes);    // When the page first loads
+$(window).resize(removeLinkBikes);  
+
+
    
 
 

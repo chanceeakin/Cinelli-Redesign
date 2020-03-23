@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: black;
-
+    height: 100%;
 }
 
 
@@ -61,19 +61,22 @@ body {
     font-size: 11.5px;
     letter-spacing: 1px;
     padding-top: 23px;
-    padding-left: 1.3em;
-    padding-right: 1.3em;
+    padding-left: 32px;
+    padding-right: 32px;
     text-decoration: none;
     text-transform: uppercase;
     height: 80px;
+    display: inline;
 }
+
+
 
 .icons-right li {
     padding-left: 1.1em;
     padding-right: 1.1em;
     margin: 0;
     margin-top: 0px;
-    display: inline-block;
+    display: inline;
 }
 
 #bikes {
@@ -104,19 +107,19 @@ body {
 }
 
 @media (max-width: 1250px) {
-    .mainLink {
-        margin-left: 10px;
-        margin-right: 10px;
+    .navbarLinks .nav-item {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
 @media (max-width: 1150px) {
     .icons-right li {
-        padding: .3em;
+        padding: 10px;
     }
-    .mainLink {
-        margin-left: 0px;
-        margin-right: 0px;
+    .navbarLinks .nav-item {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -151,9 +154,6 @@ body {
 }
 
 /* DROPDOWN MENU */
-
-
-
 #dropdownMenu {
     background-color: white;
     position: absolute;
@@ -211,5 +211,26 @@ body {
 }
 
 
+/* DROPDOWN BUTTONS */
+#bikesButton {
+    /* background-color: pink; */
+}
+
+.mainLink {
+    display: inline;  
+    margin: 0px; display: block; width: 100%; 
+    
+}
+
+.collapseIcon  {
+     /* float: right; */
+    vertical-align: top;
+    /* margin: 0px; display: block; width: 100%; height: 100%; */
+}
 
 
+
+.allCollapse li {
+    text-decoration: none;
+    list-style:none;
+}
