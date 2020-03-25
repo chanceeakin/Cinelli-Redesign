@@ -1,21 +1,14 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     color: black;
     height: 100%;
 }
-
-
-
-
 .sign-in {
     background-color: #CF4747;
- 
 } 
 
-
 /* MAIN NAVBAR */
-
 #brandIcon {
    width: 190px;
    margin: px;
@@ -36,20 +29,14 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     text-transform: uppercase;
-    
     color: black;
-    
+   
 }
-
-#mainNavbar li {
-    
-}
-
 
 #mainNavbar a {
     color: black;
     align-items: center;
-  
+    
 }
 
 .mainLink {
@@ -67,9 +54,9 @@ body {
     text-transform: uppercase;
     height: 80px;
     display: inline;
+    font-weight: 500;
+    
 }
-
-
 
 .icons-right li {
     padding-left: 1.1em;
@@ -97,7 +84,6 @@ body {
 
 .icons-right {
     display: inline-block;
-   
 }
 
 .navbar-toggler {
@@ -125,8 +111,8 @@ body {
 
 @media (max-width: 991px) {
     .icons-right li {
-       margin: 10px;
-       margin-top: 10px;
+       margin: 0px;
+       margin-top: 0px;
     }
     #brandIcon {
         margin-left: 40px;
@@ -135,8 +121,6 @@ body {
         padding-left: 40px;
         padding-right: 40px;
     }
-
-   
 }
 
 @media (max-width: 600px) {
@@ -160,8 +144,7 @@ body {
     height: 170px;
     box-shadow: 5px 1px 20px #E3E3E3;
     opacity: 0;
-    z-index:;
-    
+    z-index: -2;
 }
 
 #centerDiv div {
@@ -190,7 +173,6 @@ body {
     height: 170px;
     text-align: left;
     padding: 25px;
-   
 }
 
 #leftDiv {
@@ -212,24 +194,15 @@ body {
 
 
 /* DROPDOWN BUTTONS */
-#bikesButton {
-    /* background-color: pink; */
-}
-
 .mainLink {
     display: inline;  
-    margin: 0px; display: block; width: 100%; 
-    
+    margin: 0px; display: block; width: 100%;  
 }
 
 .collapseIcon  {
-     /* float: right; */
+     float: right;
     vertical-align: top;
-    /* margin: 0px; display: block; width: 100%; height: 100%; */
 }
-
-
-
 .allCollapse li {
     text-decoration: none;
     list-style:none;

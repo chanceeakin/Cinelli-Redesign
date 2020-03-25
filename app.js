@@ -1,10 +1,23 @@
-var express     = require("express"),
-    app         = express();
-    port        = process.env.PORT || 3000
+const express           = require("express"),
+      app               = express(),
+      port              = process.env.PORT || 3000,
+      mongoose          = require("mongoose"),
+      methodOverride    = require("method-override"),
+      bodyParser        = require('body-parser'),
+      Bike              = require('./models/bike'),
+      seedDB            = require('./seeds')
 
+seedDB();
+
+app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use('/public/img/', express.static('./public/img'));
+app.use(methodOverride('_method'));
+
+const url = process.env.DATABASEURL || "mongodb://localhost/Cinelli_Redesign";
+mongoose.connect(url);
+
 
 
 // REQUIRING ROUTES

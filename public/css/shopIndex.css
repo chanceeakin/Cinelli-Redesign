@@ -1,46 +1,129 @@
 
 /* HEADER */
 
-.mainBikesImage {
-    position: relative;
-    display: inline-block;
-    z-index: 0;
+#jumbotronMainBikes {
+   margin-bottom: 0;
+    background-image: url("/img/bike perspective.jpeg");
+    background-size: cover;
+    padding-bottom: 40%;
 }
 
-.text-box-bikes {
-    position: absolute;
-    text-align: right;
-    margin-top: 400px;
-    margin-left: -300px;
-    height: 100%;
-    width: 100%;
-}
-
-.mainBikesImage h1 {
-    display: inline-block;
+#bikesHeaderText {
+    float: right;
+    width: 35%;
     color: white;
+   margin-right: 10%;
+   margin-top: 28%;
 }
 
-.mainBikesImage img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    z-index: 0;
+#bikesHeaderText h1 {
+    text-transform: uppercase;
+   
 }
+
+@media (max-width: 950px) {
+    #bikesHeaderText h1 {
+        font-size: 45px;
+       
+    } 
+    #bikesHeaderText p {
+        font-size: 16px;
+      
+    }
+}
+
+@media (max-width: 700px) {
+    #bikesHeaderText p {
+        display: none;
+    }
+}
+
+/* BORDER BOTTOM HEADER */
+.bottomBorderColors {
+display: inline-block;
+height: 5px;
+}
+
+#borderHeaderBottom ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#yellow {
+    background-color: #EBF54A;
+    width: 20%;
+    margin-left: 3%;
+}
+
+#red {
+    background-color: #CF4747;
+    width: 35%;
+    margin-left: 3%;
+}
+#black {
+    background-color: black;
+    width: 10%;
+    margin-left: 3%;
+  
+}
+#green {
+    background-color: #00CA0F;
+    width: 19%;
+    margin-left: 3%;
+}
+
+/* ABOUT THE BIKES */
+#bikesAboutText {
+    margin-top: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#bikesAboutText p {
+    margin-bottom: 0;
+}
+
+#bikesAboutText hr {
+    background-color: black;
+}
+/* SORT DROPDOWN */
+#sortDropdown {
+    margin-left: 1%;
+    margin-bottom: 1%;
+    width: 5%;
+    display: inline-block;
+}
+
+#sortDropdown button {
+    margin-top: 0;
+}
+
+
 
 /* ALL BIKES - INDEX*/
-#allBikes {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px;
+#bikesContainer {
+    padding: 3%;
+    background-color: #F5F5F5;
 }
 
 #bike {
     background-color: white;
+    margin: 1%;
+    width: 31.3%;
+    padding-top: 5%;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
 }
 
 .thumbnail img {
-    width: 100%;
+  width: 100%;
 }
 
 .thumbnail {
@@ -48,15 +131,16 @@
 }
 .thumbnail .caption-full {
     padding: 9px;
-}
+} 
 
 .bikeInfo h4 {
     font-size: 14px;
     display: inline-block;
+    padding: 5%;
 }
 
 #bikeName {
-    text-align: left;
+    float: left;
 }
 
 #bikePrice {
@@ -68,11 +152,26 @@
     margin-top: 40px;
 }
 
+@media (max-width: 1225px){
+    #bike {
+        width: 47.8%;
+    }
+}
+
+@media (max-width: 775px){
+    #bike {
+        width: 97%;
+    }
+}
+
+
+
+
+/* NEW BIKE */
 #addNewBike {
     margin-top: 40px;
 }
 
-/* NEW BIKE */
 #createBikeIdH1 {
     text-align: center;
 }
@@ -92,22 +191,6 @@
     margin: 25px auto;
 }
 
-/* EDIT COMMENT */
-#editCommentIdH1 {
-    text-align: center;
-}
 
-#editCommentIdDiv {
-    width: 30%; margin: 25px auto;
-}
-
-/* NEW COMMENT */
-#newCommentIdH1 {
-    text-align: center;
-}
-
-#newCommentIdDiv {
-    width: 30%; margin: 25px auto;
-}
 
 
