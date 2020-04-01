@@ -4,7 +4,7 @@ const express           = require("express"),
       mongoose          = require("mongoose"),
       methodOverride    = require("method-override"),
       bodyParser        = require('body-parser'),
-      Bike              = require('./models/bike'),
+      Bike              = require('./models/bikes/bike'),
       seedDB            = require('./seeds')
 
 seedDB();

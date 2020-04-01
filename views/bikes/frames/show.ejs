@@ -1,4 +1,4 @@
-<%- include("../partials/header") %>
+<%- include("../../partials/header") %>
 
                   
     <div id="showCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
@@ -11,14 +11,14 @@
       
       <!-- The slideshow -->
       <div class="carousel-inner">
-        <% var gallery = bike.gallery %>                         
+        <% var gallery = frame.gallery %>                         
         <% gallery.forEach(function(img) { %> 
        <div class="carousel-item">
           <img src="<%= img %>">
         </div>
         <% }); %>
         <div class="carousel-item active">
-          <img src="<%= bike.mainImage %>">
+          <img src="<%= frame.mainImage %>">
         </div>
       </div>
       
@@ -41,13 +41,13 @@
 
   <div class="caption-full">
     <div id="itemDescription">
-      <h4 id="itemName"><a> <%= bike.name %> </a></h4>
-      <h4 class="" id="price">$<%= bike.price.toLocaleString(); %>.00</h4>
+      <h4 id="itemName"><a> <%= frame.name %> </a></h4>
+      <h4 class="" id="price">$<%= frame.price.toLocaleString(); %>.00</h4>
     </div>
     <div id="itemButtons">
         <button id="addToCart">Add to Cart</button>
         <select name="bikeSize" class="custom-select" id="" aria-label="">
-            <% var sizes = bike.sizes %>                         
+            <% var sizes = frame.sizes %>                         
             <% sizes.forEach(function(bikeSize) { %> 
             <option value="<%= bikeSize.size %>"> <%= bikeSize.size %> </option>
             <% }); %>
@@ -56,8 +56,8 @@
     
       <!-- ADMIN ADD/DELETE BUTTONS -->
         <div id="editDeleteButtons">
-          <a id="editButton" class="btn btn-xs btn-warning" href="/shop/bikes/<%= bike.id %>/edit">Edit</a>
-          <form id="delete-form" action="/shop/bikes/<%= bike._id %>?_method=DELETE" method="POST">
+          <a id="editButton" class="btn btn-xs btn-warning" href="/shop/bikes/<%= frame.id %>/edit">Edit</a>
+          <form id="delete-form" action="/shop/bikes/<%= frame._id %>?_method=DELETE" method="POST">
               <button id="deleteButton" class="btn btn-xs btn-danger">Delete</button>
           </form>
         </div>
@@ -65,7 +65,7 @@
 
   <!-- DESCRIPTION -->
   <div id="itemParagraph">
-    <p> <%= bike.description %> </p>
+    <p> <%= frame.description %> </p>
   </div>
   <div id="colorSeparator"></div>
 
@@ -79,51 +79,35 @@
             <h5>Frameset</h5>
               <div>
                 <h6>Frame</h6>
-                <p><%= bike.frame %></p>
+                <p><%= frame.frame %></p>
               </div>
                 <div>
                   <h6>Fork</h6>
-                  <p><%= bike.fork %></p>
+                  <p><%= frame.fork %></p>
                 </div>
               <div>
                 <h6>Weight</h6>
-                <p><%= bike.weight %></p>
+                <p><%= frame.weight %></p>
               </div>
             </div>
             <!-- COCKPIT -->
             <div class="specificationCategories">
               <h5>Cockpit</h5>
                 <div>
-                  <h6>Stem</h6>
-                  <p><%= bike.stem %></p>
-                </div>
-                <div>
-                  <h6>Tape</h6>
-                  <p><%= bike.tape %></p>
-                </div>
-                <div>
-                  <h6>Saddle</h6>
-                  <p><%= bike.saddle %></p>
-                </div>
-                <div>
                   <h6>Seatpost</h6>
-                  <p><%= bike.seatpost %></p>
+                  <p><%= frame.seatpost %></p>
                 </div>
                 <div>
                   <h6>Seat Clamp</h6>
-                  <p><%= bike.seatClamp %></p>
+                  <p><%= frame.seatClamp %></p>
                 </div>
                 <div>
                   <h6>Cable Routing</h6>
-                  <p><%= bike.cableRouting %></p>
-                </div>
-                <div>
-                  <h6>Handlebars</h6>
-                  <p><%= bike.handlebars %></p>
+                  <p><%= frame.cableRouting %></p>
                 </div>
                 <div>
                   <h6>Headset</h6>
-                  <p><%= bike.headset %></p>
+                  <p><%= frame.headset %></p>
                 </div>
             </div>
             <!-- BRAKES -->
@@ -131,7 +115,7 @@
               <h5>Brakes</h5>
                 <div>
                   <h6>Brakes</h6>
-                  <p><%= bike.brakes %></p>
+                  <p><%= frame.brakes %></p>
                 </div>
               </div>
             <!-- DRIVETRAIN -->
@@ -139,27 +123,7 @@
               <h5>Drivetrain</h5>
                 <div>
                   <h6>BottomBracket</h6>
-                  <p><%= bike.bottomBracket %></p>
-                </div>
-                  <div>
-                    <h6>Front Derailleur</h6>
-                    <p><%= bike.frontDerailleur %></p>
-                  </div>
-                <div>
-                  <h6>Rear Derailleur</h6>
-                  <p><%= bike.rearDerailleur %></p>
-                </div>
-                <div>
-                  <h6>Casette</h6>
-                  <p><%= bike.casette %></p>
-                </div>
-                <div>
-                  <h6>Crankset</h6>
-                  <p><%= bike.crankset %></p>
-                </div>
-                <div>
-                  <h6>Chain</h6>
-                  <p><%= bike.chain%></p>
+                  <p><%= frame.bottomBracket %></p>
                 </div>
               </div>
             <!-- WHEELS -->
@@ -167,19 +131,11 @@
               <h5>Wheels</h5>
                 <div>
                   <h6>Tire Clearance</h6>
-                  <p><%= bike.tireClearance %></p>
+                  <p><%= frame.tireClearance %></p>
                 </div>
                 <div>
                   <h6>Hub Spacing</h6>
-                  <p><%= bike.hubSpacing %></p>
-                </div>
-                <div>
-                  <h6>Wheels</h6>
-                  <p><%= bike.wheels %></p>
-                </div>
-                <div>
-                  <h6>Tires</h6>
-                  <p><%= bike.tires %></p>
+                  <p><%= frame.hubSpacing %></p>
                 </div>
               </div>
 
@@ -188,4 +144,4 @@
   </div>
 
 
-<%- include("../partials/footer") %>
+<%- include("../../partials/footer") %>

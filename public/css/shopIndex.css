@@ -191,6 +191,49 @@ height: 5px;
     margin: 25px auto;
 }
 
+/* -------------ROAD BIKES-------------- */
 
+/* HEADER */
 
+#jumbotronRoadBikes {
+    margin-bottom: 0;
+     background-image: url("/img/Orange Bike Fellow.jpeg");
+     background-size: cover;
+     padding-bottom: 40%;
+ }
+ 
+ #roadBikesHeaderText {
+     float: right;
+     width: 35%;
+     color: white;
+    margin-right: 2%;
+    margin-top: 6%;
+ }
+ 
+ #roadBikesHeaderText h1 {
+     text-transform: uppercase;
+    
+ }
+ 
+ @media (max-width: 950px) {
+     #roadBikesHeaderText h1 {
+         font-size: 45px;
+        
+     } 
+     #roadBikesHeaderText p {
+         font-size: 16px;
+       
+     }
+ }
+
+ 
+ @media (max-width: 750px) {
+    #roadBikesHeaderText {
+     margin-right: -5%;
+     display: block;
+    }
+     #roadBikesHeaderText p {
+         display: none;
+     }
+ }
 

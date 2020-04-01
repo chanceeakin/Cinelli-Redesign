@@ -1,9 +1,9 @@
-<%- include("../partials/header") %>
+<%- include("../../partials/header") %>
 
-<div class="jumbotron-fluid" id="jumbotronMainBikes">
+<div class="jumbotron-fluid" id="jumbotronRoadBikes">
    <img src="" alt="">
-    <div id="bikesHeaderText">
-        <h1 class="display-4">Bikes</h1>
+    <div id="roadBikesHeaderText">
+        <h1 class="display-4">Frames</h1>
         <p class="lead">Craftsmanship and passion are at the heart of Cinelli</p>
     </div>
   </div>
@@ -35,15 +35,15 @@
   </div>
 
     <div class="row text-center " id="bikesContainer"  >
-       <% bikes.forEach(function(bike){ %>
+       <% frames.forEach(function(frame){ %>
            <div class=" " id="bike">
                <div class="thumbnail bikeInfo">
-                <a href="/shop/bikes/<%= bike._id %>">  
-                    <img src="<%= bike.mainImage %>">
+                <a href="/shop/frames/<%= frame._id %>">  
+                    <img src="<%= frame.mainImage %>">
                 </a> 
                   <div class="caption">
-                      <h4 id="bikeName"><%= bike.name %></h4>
-                      <h4 id="bikePrice">$<%= bike.price.toLocaleString(); %>.00</h4>
+                      <h4 id="bikeName"><%= frame.name %></h4>
+                      <h4 id="bikePrice">$<%= frame.price.toLocaleString(); %>.00</h4>
                   </div>
                   <p>
                      
@@ -54,6 +54,4 @@
    </div>
 </div>
 
-<%- include("../partials/footer") %>
-
-<!-- .toLocaleString(); -->
+<%- include("../../partials/footer") %>

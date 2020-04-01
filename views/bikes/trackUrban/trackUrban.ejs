@@ -1,8 +1,57 @@
-<% include("../../partials/header") %>
+<%- include("../../partials/header") %>
 
-<h1>This is the Track Urban Index Page</h1>
+<div class="jumbotron-fluid" id="jumbotronRoadBikes">
+   <img src="" alt="">
+    <div id="roadBikesHeaderText">
+        <h1 class="display-4">Track/Urban Bikes</h1>
+        <p class="lead">Craftsmanship and passion are at the heart of Cinelli</p>
+    </div>
+  </div>
+  <div id="borderHeaderBottom">
+     <ul> 
+        <li class="bottomBorderColors" id="red"></li>
+        <li class="bottomBorderColors" id="yellow"></li>
+        <li class="bottomBorderColors" id="black"></li>
+        <li class="bottomBorderColors" id="green"></li>
+    </ul>
+  </div>
+  <div id="bikesAboutText">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <hr>
+  </div>
+  <!-- <p id="addNewBike">
+    <a class="btn btn-primary btn-large" href="bikes/new">Add New Bike</a>
+ </p> -->
+  <div class="dropdown" id="sortDropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Sort
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">By Popularity (asc)</a>
+      <a class="dropdown-item" href="#">By Popularity (desc)</a>
+      <a class="dropdown-item" href="#">By Price (asc)</a>
+      <a class="dropdown-item" href="#">By Price (desc)</a>
+    </div>
+  </div>
 
+    <div class="row text-center " id="bikesContainer"  >
+       <% tUBikes.forEach(function(bike){ %>
+           <div class=" " id="bike">
+               <div class="thumbnail bikeInfo">
+                <a href="/shop/bikes/<%= bike._id %>">  
+                    <img src="<%= bike.mainImage %>">
+                </a> 
+                  <div class="caption">
+                      <h4 id="bikeName"><%= bike.name %></h4>
+                      <h4 id="bikePrice">$<%= bike.price.toLocaleString(); %>.00</h4>
+                  </div>
+                  <p>
+                     
+                  </p>
+               </div>
+           </div>
+       <% }); %>
+   </div>
+</div>
 
-
-
-<% include("../../partials/footer") %>
+<%- include("../../partials/footer") %>

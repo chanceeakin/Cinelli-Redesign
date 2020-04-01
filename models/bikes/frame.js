@@ -1,14 +1,11 @@
 const mongoose = require('mongoose');
 
-const bikeSchema = new mongoose.Schema({
+const bikeFrameSchema = new mongoose.Schema({
+
         // IDENTITY
         name: String,
         mainImage: String,
-        gallery: [
-                {
-                image: String
-                }
-        ],
+        gallery: [String],
         description: String,
         price: Number,
         sku: String,
@@ -25,28 +22,17 @@ const bikeSchema = new mongoose.Schema({
         fork: String,
         weight: String,
         // COCKPIT
-        stem: String,
-        tape: String,
-        saddle: String,
         seatpost: String,
         seatClamp: String,
         cableRouting: String,
-        handlebars: String,
         headset: String,
         // BRAKES
         brakes: String,
         // DRIVETRAIN
         bottomBracket: String,
-        frontDerailleur: String,
-        rearDerailleur: String,
-        casette: String,
-        crankset: String, 
-        chain: String,
         // WHEELS
         tireClearance: String,
         hubSpacing: String,
-        wheels: String,
-        tires: String,
 
 
 
@@ -62,8 +48,6 @@ const bikeSchema = new mongoose.Schema({
         //     },
         //     username: String
         // }
-});
+    });
 
- const Bike = mongoose.model("Bike", bikeSchema);
-
- module.exports = Bike;
+module.exports = mongoose.model('BikeFrame', bikeFrameSchema);

@@ -53,3 +53,19 @@ function removeLinkBikes(){
     }
 }
 
+// document.querySelectorAll('.imgInput').forEach(input => {
+//     input.addEventListener('input', evt => {
+//     const value = input.value.trim();
+    
+//         if (value) {
+//             input.dataset.state = 'valid'
+//             input.setAttribute('name', 'image');
+//           } else {
+//             input.dataset.state = 'invalid'
+//             input.setAttribute('name', '');
+//           }
+   
+   
+//         });
+//     });
+
