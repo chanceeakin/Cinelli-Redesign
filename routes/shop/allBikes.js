@@ -1,26 +1,26 @@
 const express = require("express"),
-      router  = express.Router();
-      Bike    = require('../../models/bikes/bike')
+  router = express.Router();
+Bike = require("../../models/bikes/bike");
 
-
-//INDEX 
-router.get("/", function(req, res){
-    Bike.find({}, function(err, allBikes){
-       if(err){
-           console.log(err);
-       } else {
-          res.render("bikes/allBikes",{bikes:allBikes});
-       }
-    });
+//INDEX
+router.get("/", function(req, res) {
+  Bike.find({}, function(err, allBikes) {
+    if (err) {
+      res.status(400).send("No record found");
+      console.log(err);
+    } else {
+      res.render("bikes/allBikes", { bikes: allBikes });
+    }
+  });
 });
 
-// //CREATE 
+// //CREATE
 // router.post("/", function(req, res){
 //     var name            = req.body.name;
 //     var mainImage       = req.body.mainImage;
 //     var image           = req.body.image;
 //     var gallery         = image;
-    
+
 //     var description     = req.body.description;
 //     var price           = req.body.price;
 //     var newBike         = {name: name, mainImage: mainImage, gallery: gallery, description: description, price: price}
@@ -34,20 +34,22 @@ router.get("/", function(req, res){
 //     });
 // });
 
-// //NEW 
+// //NEW
 // router.get("/new", function(req, res){
-//    res.render("bikes/new"); 
+//    res.render("bikes/new");
 // });
 
-// SHOW 
-router.get("/:id", function(req, res){
-    Bike.findById(req.params.id).populate().exec(function(err, foundBike){
-        if(err){
-            console.log(err);
-        } else {
-            console.log(foundBike);
-            res.render("bikes/show", {bike: foundBike});
-        }
+// SHOW
+router.get("/:id", function(req, res) {
+  Bike.findById(req.params.id)
+    .populate()
+    .exec(function(err, foundBike) {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log(foundBike);
+        res.render("bikes/show", { bike: foundBike });
+      }
     });
 });
 
@@ -58,7 +60,7 @@ router.get("/:id", function(req, res){
 //     });
 // });
 
-// // UPDATE 
+// // UPDATE
 // router.put("/:id", function(req, res){
 //     Bike.findByIdAndUpdate(req.params.id, req.body.bike, function(err, updatedBike){
 //        if(err){
@@ -69,7 +71,7 @@ router.get("/:id", function(req, res){
 //     });
 // });
 
-// // DESTROY 
+// // DESTROY
 // router.delete("/:id", function(req, res){
 //    Bike.findByIdAndRemove(req.params.id, function(err){
 //       if(err){
@@ -80,9 +82,5 @@ router.get("/:id", function(req, res){
 //    });
 // });
 
-
-
-
-// EXPORT 
+// EXPORT
 module.exports = router;
-
